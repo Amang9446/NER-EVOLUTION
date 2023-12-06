@@ -1,0 +1,73 @@
+.content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 60%;
+    padding-left: 80px;
+}
+
+.banner {
+    font-size: 40px;
+    line-height: 1.5px;
+    /* font-family: 'Spacemono', 'Courier New', Courier, monospace; */
+    font-family: Space, sans-serif;
+    font-weight: 550;
+    margin-bottom: 15px;
+    color: rgb(98, 117, 255);
+    text-transform: uppercase;
+    margin-right: 16px;
+    margin-top: 4rem;
+}
+
+.banner:hover {
+    color: rgb(98, 117, 255);
+    cursor: pointer;
+}
+
+.para {
+    font-size: 18px; 
+    line-height: 1.6; 
+    margin-top: 20px;
+    width: 80%;
+    color: black;
+    padding-left: 80px;
+    font-family: Space, sans-serif;
+}
+
+.btn {
+    margin-top: 49px;
+    padding-left: 80px;
+   
+}
+
+.read-more {
+    display: inline-block;
+    color: rgb(229, 234, 239);
+    padding: 16px 60px;
+    background-color: rgb(70, 70, 240);
+    box-shadow: rgb(195, 199, 203) 10px 10px 30px, rgb(255, 255, 255) -10px -10px 30px;
+    border: 0px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: box-shadow 0.2s ease-in-out 0s, background 0.2s ease-in-out 0s, color 0.2s ease-in-out 0s;
+}
+
+.read-more:hover {
+    background: rgb(98, 117, 255);
+    cursor: pointer;
+}
+
+.logo {
+    margin: 0px;
+    clip-path: none;
+    position: absolute;
+    top: 160px;
+    left: 1000px;
+}

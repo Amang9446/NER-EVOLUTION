@@ -1,0 +1,53 @@
+{% include "header.html" %}
+{% block content %}
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>NER-EVOLUTION</title>
+     {% load static %}
+    <link rel="stylesheet" href="{% static 'css/model.css' %}">
+    <script>
+
+        function adjustTextareaHeight(textarea) {
+            textarea.style.height = "auto";
+            textarea.style.height = (textarea.scrollHeight) + "px";
+        }
+
+        function showProcessing() {
+            // Show the processing image when the form is submitted
+            document.getElementById('processingImage').style.display = 'block';
+            
+        }
+
+    </script>
+</head>
+<body>
+      
+    <h1>Text Analysis</h1>
+
+    <form method="post" action="{% url 'analyze_text' %}" onsubmit="showProcessing()">
+        {% csrf_token %}
+        <textarea id="text" class="textarea" placeholder="Send a message" name="text" rows="1" cols="50" oninput="adjustTextareaHeight(this)" required></textarea><br>
+        <input type="submit" value="Analyze">
+    
+        <div id="processingImage" class="processing-image" style="display: none;">
+            {% load static %}
+            <img id="processingGif" src="{% static 'images/think.gif' %}" alt="Processing...">
+        </div>
+    </form>
+
+    <div class="logo">
+        {% load static %}
+        <img src="{% static 'images/model.gif' %}" alt="Generative graphics">
+    </div>
+    {% endblock %}
+</body>
+</html> 
+
+
+
+{% comment %} In the dynamic world of mobile technology, five prominent companies have risen to define the landscape. Apple, with its iconic iPhone series, consistently sets the bar for innovation and design, captivating users worldwide. Samsung, a global powerhouse, boasts a diverse range of smartphones like the Galaxy S and Note series, showcasing cutting-edge features and stunning displays. Google, through its Pixel lineup, combines sleek hardware with the latest Android innovations, providing a seamless user experience. {% endcomment %}
+
+

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NER-EVOLUTION</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/header.css' %}">
+</head>
+<body>
+    <header class="header">
+        {% block content %}
+        <div class="next">
+            <a href="{% url 'index' %}" class="title">NER-EVOLUTION</a>
+            <nav class="nav">
+                <a href="{% url 'index' %}" class="nav-a">Home</a>
+                <a href="{% url 'model' %}" class="nav-a">Model</a>
+                <a href="{% url 'api' %}" class="nav-a">Api</a>
+                <a href="{% url 'about' %}" class="nav-a">About</a>
+                <a href="{% url 'contact' %}" class="nav-a">Contact</a>
+            </nav>
+        </div>
+        {% endblock %}
+    </header>
+    </body>
+    </html>

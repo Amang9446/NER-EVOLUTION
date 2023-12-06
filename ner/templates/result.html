@@ -1,0 +1,34 @@
+{% include "header.html" %}
+{% block content %}
+<!DOCTYPE html>
+ <html lang="en">
+ 
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>NER-EVOLUTION</title>
+     {% load static %}
+     <link rel="stylesheet" href="{% static 'css/result.css' %}">
+</head>
+<body>
+    
+        <h1>Text Analysis Result</h1>
+        <div class="result-container">
+
+       <p> {{ text }}</p>
+        <h2>Entities:</h2>
+        <ul>
+            {% for entity in entities %}
+                <li><span class="highlight">{{ entity.text }}</span> - {{ entity.label }}</li>
+            {% endfor %}
+        </ul>
+
+        <a href="{% url 'model' %}" class="back-button">Back</a>
+    </div>
+    <div class="logo">
+        {% load static %}
+        <img src="{% static 'images/result.gif' %}" alt="Generative graphics">
+    </div>
+    {% endblock %}
+</body>
+</html>

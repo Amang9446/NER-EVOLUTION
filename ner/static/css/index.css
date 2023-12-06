@@ -1,0 +1,135 @@
+.content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 60%;
+    padding-left: 80px;
+}
+
+.banner {
+    font-size: 115px;
+    line-height: 100px;
+    /* font-family: 'Spacemono', 'Courier New', Courier, monospace; */
+    font-family: Space, sans-serif;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: rgb(40, 45, 49);
+    text-transform: uppercase;
+    margin-right: 16px;
+    margin-top: 4rem;
+}
+
+.banner:hover {
+    cursor: pointer;
+}
+
+.para {
+    color: black;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0px;
+    width: 35%;
+    padding-left: 80px;
+    font-family: Space, sans-serif;
+}
+
+.ul-div {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    padding-left: 80px;
+}
+
+.li-div {
+    color: black;
+    font-size: 18px;
+    line-height: 26px;
+    margin: 16px 0px 0px;
+    display: flex;
+    align-items: center;
+    font-family: Space, sans-serif;
+}
+
+.li-div svg {
+    margin-right: 10px;
+}
+
+
+.btn {
+    margin-top: 40px;
+    padding-left: 80px;
+}
+
+.read-more {
+    font-family: Space, sans-serif;
+    display: inline-block;
+    color: rgb(229, 234, 239);
+    padding: 16px 70px;
+    background-color: rgb(70, 70, 240);
+    box-shadow: rgb(195, 199, 203) 10px 10px 30px, rgb(255, 255, 255) -10px -10px 30px;
+    border: 0px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: box-shadow 0.2s ease-in-out 0s, background 0.2s ease-in-out 0s, color 0.2s ease-in-out 0s;
+}
+
+.read-more:hover {
+    background: rgb(98, 117, 255);
+    cursor: pointer;
+}
+
+.Suggest {
+    
+    display: inline-block;
+    margin: 16px 0px 0px;
+    color: rgb(98, 117, 255);
+    padding: 16px 45px;
+    background: rgba(98, 117, 255, 0.1);
+    font-weight: bold;
+    font-size: 14px;
+    font-family: Space, sans-serif;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 0px;
+    border-radius: 10px;
+    margin: 0px 0px 0px 16px;
+    box-shadow: none;
+    transition: box-shadow 0.2s ease-in-out 0s, background 0.2s ease-in-out 0s;
+}
+
+.Suggest:hover {
+    cursor: pointer;
+    background-color: rgb(212, 212, 212);
+}
+
+.logo {
+    margin: 0px;
+    clip-path: none;
+    position: absolute;
+    top: 115px;
+    left: 805px;
+
+}
+
+.logo img {
+    animation: rotateImage 80s linear infinite;
+}
+
+@keyframes rotateImage {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

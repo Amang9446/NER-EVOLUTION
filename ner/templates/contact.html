@@ -1,0 +1,108 @@
+{% include "header.html" %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+    
+</head>
+
+<body>
+
+    <section class="about-us">
+        <div class="about">
+            {% load static %}
+            <img src="{% static 'images/Images_405.png' %}"
+                class="pic">
+            <div class="text">
+                <h2 style="color: black;">About Us</h2>
+                <h5>Full-Stack Developer & <span>Designer</span></h5>
+                <p>"Hello! I'm Aman Gupta, a passionate Full-Stack Developer & Designer. With a blend of creativity and technical prowess, I strive to craft digital experiences that not only look great but also function seamlessly. I thrive on the ever-evolving world of web and app development, and I'm dedicated to creating solutions that make a meaningful impact. Let's bring your ideas to life and build something extraordinary together!</p>
+
+            </div>
+        </div>
+    </section>
+    <BR></BR>
+
+    <section class="about-us">
+        <div class="about">
+            {% load static %}
+            <img src="{% static 'images/amit.jpg' %}" alt="Generative graphics"
+                class="pic">
+            <div class="text">
+                <h5>Front-end Developer & <span>Designer</span></h5>
+                <p>"Hello! My name is Amit Kumar, and I am a dedicated Front-end Developer & Designer. I have a keen eye for design aesthetics and a passion for creating user-friendly, visually engaging websites and applications. With a strong focus on the front-end, I bring ideas to life through clean, responsive, and interactive designs. Let's collaborate to turn your vision into a captivating digital reality!</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="one">
+    <ul>
+        <li>
+            <a href="#">
+                <i class="fab fa-facebook-f icon"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="fab fa-twitter icon"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="fab fa-linkedin-in icon"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://github.com/Amang9446">
+                <i class="fab fa-github icon"></i>
+            </a>
+        </li>
+    </ul>
+
+</div>
+
+    <div class="second">
+    <ul class="ul">
+        <li>
+            <a href="https://github.com/Diligent-Amit">
+                <i class="fab fa-facebook-f icon"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://github.com/Diligent-Amit">
+                <i class="fab fa-twitter icon"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://github.com/Diligent-Amit">
+                <i class="fab fa-linkedin-in icon"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://github.com/Diligent-Amit">
+                <i class="fab fa-github icon"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+{% endblock %}
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+

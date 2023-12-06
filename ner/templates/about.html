@@ -1,0 +1,58 @@
+{% include "header.html" %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+</head>
+
+<body>
+    <div class="content">
+        <h1 class="banner" style=" margin-top: 2rem; font-size: 28px;">About Our Model</h1>
+    </div>
+    <p class="para">
+        In the world of language technology and machine learning, we're on a 
+        journey to make sense of unstructured text like articles, emails, and more. 
+        Imagine a tool that can instantly pick out names of people, places, and 
+        dates from a jumble of words. That's where Named Entity Recognition 
+        (NER) comes in – it's like a magic lens that spots the important stuff in text.
+        <br> </br>
+        Our project is all about building a smart NER tool using a library called 
+        spaCy. This tool learns from examples we give it and becomes great at 
+        understanding what's important in a text. So, when you feed it a story, it 
+        can quickly tell you who's who, where things are happening, and when it all 
+        goes down. 
+        <br> </br>
+        NER might sound fancy, but it's actually pretty down-to-earth. Think about 
+        how it could help search engines find exactly what you're looking for, or 
+        how it could help businesses organize information in a snap. We're aiming 
+        to make this tool useful and easy for anyone who deals with lots of words 
+        and wants to find the gold nuggets hidden in there. 
+        <br> </br>
+        We're using spaCy, a popular tool in the language world known for being 
+        both fast and smart. We're taking its basic form and giving it a makeover, 
+        training it on special data so it gets better at understanding the things that 
+        matter most. 
+        <br> </br>
+        In a world flooded with words, imagine having a tool that spots the gems 
+        effortlessly. Our project is about making that imagination a reality with a 
+        custom spaCy NER model – a tool that doesn't just read text, but also 
+        understands it in a way that can be super handy.
+    </p>
+    <div class="btn">
+        <a href="{% url 'contact' %}" class="read-more">Read more</a>
+    </div>
+
+    <div class="logo">
+        {% load static %}
+        <img src="{% static 'images/about.gif' %}" alt="Generative graphics">
+    </div>
+    {% endblock %}
+</body>
+
+</html>

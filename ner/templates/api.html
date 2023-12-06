@@ -1,0 +1,47 @@
+{% include "header.html" %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <title>API</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/api.css' %}">
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <!-- Pricing Section -->
+    <div class="pricing-section">
+        <h2>Choose a Plan</h2>
+        <div class="pricing-plans">
+            <div class="plan">
+                <h3>Basic Plan</h3>
+                <p>Perfect for individuals getting started</p>
+                <span class="price">$9.99/month</span>
+                <a href="#" class="btn">Get Started</a>
+            </div>
+            <div class="plan">
+                <h3>Pro Plan</h3>
+                <p>For small to medium-sized businesses</p>
+                <span class="price">$29.99/month</span>
+                <a href="#" class="btn">Get Started</a>
+            </div>
+            <div class="plan">
+                <h3>Enterprise Plan</h3>
+                <p>Custom solutions for large enterprises</p>
+                <span class="price">Contact us for pricing</span>
+                <a href="#" class="btn">Contact Sales</a>
+            </div>
+        </div>
+    </div>
+    <!-- End Pricing Section -->
+    {% endblock %}
+</body>
+
+</html>
